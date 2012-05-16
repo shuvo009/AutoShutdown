@@ -1,0 +1,37 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:AutoShutdown" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Name="window" mc:Ignorable="d" x:Class="AutoShutdown.MainWindow"
+        Title="AutoShutdown" Height="235" Width="257" ResizeMode="CanMinimize" FontSize="14.667">
+	<Window.Resources>
+		<local:ButtonEnableConverter x:Key="ButtonEnableConverter"/>
+		<local:ViewTime x:Key="ViewTimeDataSource" d:IsDataSource="True"/>
+        
+	</Window.Resources>
+    <Grid DataContext="{Binding Source={StaticResource ViewTimeDataSource}}">
+    	<Grid.Background>
+    		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+    			<GradientStop Color="#FF4D6246" Offset="0"/>
+    			<GradientStop Color="#FFCDD6CA" Offset="1"/>
+    			<GradientStop Color="#FF9CB195" Offset="0.616"/>
+    		</LinearGradientBrush>
+    	</Grid.Background>
+    	<Grid.ColumnDefinitions>
+    		<ColumnDefinition Width="80*"/>
+    		<ColumnDefinition Width="21*"/>
+            <ColumnDefinition Width="134*" />
+        </Grid.ColumnDefinitions>
+    	<Grid.RowDefinitions>
+    		<RowDefinition/>
+    	</Grid.RowDefinitions>
+        
+    	<ComboBox x:Name="comboBoxTime" Margin="2,80.921,14,0" Grid.Column="1" VerticalAlignment="Top" Height="26.715" ItemsSource="{Binding Mode=OneWay}" DisplayMemberPath="Name" Grid.ColumnSpan="2" />
+    	<TextBlock Margin="8,0,1.937,136.248" TextWrapping="Wrap" Text="Time Left :" VerticalAlignment="Bottom"/>
+    	<TextBlock Margin="37.273,80.921,8,0" TextWrapping="Wrap" Text="Time :" VerticalAlignment="Top" d:LayoutOverrides="VerticalAlignment"/>
+    	<TextBlock x:Name="textBlockTimeLeft" Margin="2,0,0,136.248" TextWrapping="Wrap" Grid.Column="1" VerticalAlignment="Bottom" Grid.ColumnSpan="2" />
+    	<StackPanel Margin="37,0,29,31.311" Orientation="Horizontal" Grid.ColumnSpan="3" d:LayoutOverrides="Width" VerticalAlignment="Bottom">
+    		<Button x:Name="buttonStrat" Content="Start" HorizontalAlignment="Left" Width="84.274" Height="39.246" Command="{Binding StartButtonCommand, ElementName=window, Mode=OneWay}" CommandParameter="{Binding SelectionBoxItem, ElementName=comboBoxTime, Mode=OneWay}" IsEnabled="{Binding IsRunning, Converter={StaticResource ButtonEnableConverter}, ElementName=window}"/>
+    		<Button Content="Stop" HorizontalAlignment="Left" Height="39.246" Width="84.394" Margin="15,0,1,0" IsEnabled="{Binding IsRunning, ElementName=window}" Command="{Binding StopButtonCommand, ElementName=window, Mode=OneWay}" CommandParameter="Stop"/>
+    	</StackPanel>
+    </Grid>
+</Window>

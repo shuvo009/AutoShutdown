@@ -1,0 +1,15 @@
+C:\Users\Shuvo\Documents\visual studio 2010\Projects\AutoShutdown\AutoShutdown\bin\Debug\AutoShutdown.exe
+C:\Users\Shuvo\Documents\visual studio 2010\Projects\AutoShutdown\AutoShutdown\bin\Debug\AutoShutdown.pdb
+C:\Users\Shuvo\Documents\visual studio 2010\Projects\AutoShutdown\AutoShutdown\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Shuvo\Documents\visual studio 2010\Projects\AutoShutdown\AutoShutdown\obj\x86\Debug\MainWindow.baml
+C:\Users\Shuvo\Documents\visual studio 2010\Projects\AutoShutdown\AutoShutdown\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Shuvo\Documents\visual studio 2010\Projects\AutoShutdown\AutoShutdown\obj\x86\Debug\App.g.cs
+C:\Users\Shuvo\Documents\visual studio 2010\Projects\AutoShutdown\AutoShutdown\obj\x86\Debug\AutoShutdown_MarkupCompile.cache
+C:\Users\Shuvo\Documents\visual studio 2010\Projects\AutoShutdown\AutoShutdown\obj\x86\Debug\AutoShutdown.g.resources
+C:\Users\Shuvo\Documents\visual studio 2010\Projects\AutoShutdown\AutoShutdown\obj\x86\Debug\AutoShutdown.Properties.Resources.resources
+C:\Users\Shuvo\Documents\visual studio 2010\Projects\AutoShutdown\AutoShutdown\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Shuvo\Documents\visual studio 2010\Projects\AutoShutdown\AutoShutdown\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Shuvo\Documents\visual studio 2010\Projects\AutoShutdown\AutoShutdown\obj\x86\Debug\AutoShutdown.exe
+C:\Users\Shuvo\Documents\visual studio 2010\Projects\AutoShutdown\AutoShutdown\obj\x86\Debug\AutoShutdown.pdb
+C:\Users\Shuvo\Documents\visual studio 2010\Projects\AutoShutdown\AutoShutdown\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Shuvo\Documents\visual studio 2010\Projects\AutoShutdown\AutoShutdown\obj\x86\Debug\AutoShutdown_MarkupCompile.lref
